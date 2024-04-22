@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로또번호 추출 프로그램</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            flex-direction: column;
+        }
+        .container { 
+            border: 2px solid rgb(217, 217, 217); 
+            padding: 15px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        input {
+            margin-left: 15px;
+            color: rgb(255, 255, 255);
+            background: #4c11ff;
+            font-size: 1.5rem;
+        }
+        p {
+            font-size: 2rem;
+            color : blueviolet;
+            text-align: center;
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        pre {
+            white-space: pre-wrap;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>로또 번호 추출 프로그램</h1>  <!-- 제목 -->
+    <div class="container"> <!-- 박스 시작 -->
+    <pre>
+<mark>추첨방송</mark> : 매주 토요일 오후 8시 35분 MBC 방송
+<mark>판매시간</mark> : 매일 6시부터 24시까지 판매
+추첨일(토요일)에는 오후 8시에 판매 마감
+추첨일 오후 8시부터 다음날(일요일) 오전 6시까지 판매 정지
+<mark>지급기한 : 지급 개시일로부터 1년</mark>
+    </pre>
+    </div>
+    <div>
+        <h2>
+            당신을 위한 로또 번호는 <input id="buttonId" type="button" value="Click">
+        </h2>
+        <p id="result1"></p>
+        <h2>
+            입니다. 행운을 빕니다!
+        </h2>
+    </div>
+    <script src="./js/number.js"></script>
+    <script src="./js/app.js" defer></script>
+</body>
+</html>
